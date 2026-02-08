@@ -2,7 +2,7 @@ let noBtn = document.getElementById("noBtn");
 let yesBtn = document.getElementById("yesBtn");
 let heartsContainer = document.getElementById("hearts");
 
-/* Make NO button run */
+/* escape no button */
 noBtn.addEventListener("mouseover", () => {
     let x = Math.random() * 80 + "vw";
     let y = Math.random() * 80 + "vh";
@@ -11,26 +11,26 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.top = y;
 });
 
-/* Go to second page after YES */
+/* go to second page */
 yesBtn.addEventListener("click", () => {
     window.location.href = "valentine.html";
 });
 
-/* falling hearts generator */
-function createHeart() {
-    let heart = document.createElement("div");
-    heart.classList.add("heart");
-    heart.innerHTML = "💗";
+/* floating cute particles */
+const symbols = ["💗", "✨", "🌸", "💞", "⭐", "💘", "🩷"];
 
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
-    heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+function makeFloating() {
+    let item = document.createElement("div");
+    item.classList.add("float");
+    item.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
 
-    heartsContainer.appendChild(heart);
+    item.style.left = Math.random() * 95 + "vw";
+    item.style.fontSize = (Math.random() * 20 + 15) + "px";
+    item.style.animationDuration = (Math.random() * 4 + 3) + "s";
 
-    setTimeout(() => {
-        heart.remove();
-    }, 5000);
+    heartsContainer.appendChild(item);
+
+    setTimeout(() => item.remove(), 6000);
 }
 
-setInterval(createHeart, 300);
+setInterval(makeFloating, 250);
