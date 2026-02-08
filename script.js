@@ -3,10 +3,10 @@ let yesBtn = document.getElementById("yesBtn");
 let floatArea = document.getElementById("floatArea");
 let petalsArea = document.getElementById("petals");
 
-/* Words that float down */
+/* Falling words */
 const loveWords = ["I love you", "hi baby", "skibidi toilet"];
 
-/* Sparkling floating words */
+/* Sparkling falling words */
 function makeWord() {
     let word = document.createElement("div");
     word.classList.add("floatWord");
