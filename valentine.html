@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Message For You 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">A Message For You 💗</h1>
+
+    <p id="loveMessage"></p>
+
+    <a id="songLink" href="#" target="_blank"></a>
+</div>
+
+<script>
+    // 👉 CHANGE THIS TO YOUR OWN MESSAGE
+    const yourMessage = "I love you so much";
+
+    // 👉 CHANGE THIS TO THE SONG THAT REMINDS YOU OF HER
+    const songURL = "https://youtu.be/95HlilRpVFk?list=RD95HlilRpVFk&t=50";
+
+    document.getElementById("loveMessage").textContent = yourMessage;
+
+    const link = document.getElementById("songLink");
+    link.href = songURL;
+    link.textContent = "💗 A song that reminds me of you 💗";
+</script>
+
+</body>
+</html>
