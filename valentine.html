@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Message For You 💗</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! 💖</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>YAY! You said yes! 💗</h1>
 
-<div class="container">
-    <h1 class="title">A Message For You 💗</h1>
+        <p class="message">
+            <!-- PUT YOUR MESSAGE HERE -->
+            You're the best thing that ever happened to me.  
+            Thank you for saying yes. 💖
+        </p>
 
-    <p id="loveMessage"></p>
+        <h2>🎵 A song that reminds me of you:</h2>
 
-    <a id="songLink" href="#" target="_blank"></a>
-</div>
-
-<script>
-    // 👉 CHANGE THIS TO YOUR OWN MESSAGE
-    const yourMessage = "I love you so much";
-
-    // 👉 CHANGE THIS TO THE SONG THAT REMINDS YOU OF HER
-    const songURL = "https://youtu.be/95HlilRpVFk?list=RD95HlilRpVFk&t=50";
-
-    document.getElementById("loveMessage").textContent = yourMessage;
-
-    const link = document.getElementById("songLink");
-    link.href = songURL;
-    link.textContent = "💗 A song that reminds me of you 💗";
-</script>
-
+        <a class="song" href="https://youtu.be/95HlilRpVFk?list=RD95HlilRpVFk&t=50" target="_blank">
+            Click to listen 💗
+        </a>
+    </div>
 </body>
 </html>
