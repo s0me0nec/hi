@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be My Valentine?</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Heart cursor -->
+    <style>
+        body {
+            cursor: url('https://cur.cursors-4u.net/love/lov-1/lov57.cur'), auto !important;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="hearts" id="hearts"></div>
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="floatArea" id="floatArea"></div>
+    <div class="petals" id="petals"></div>
 
     <div class="container">
         <h1>Will you be my Valentine? 💖</h1>
 
         <div class="characters">
-            <img src="chuy.png" class="character-left">
-            <img src="bob.png" class="character-right">
+            <img src="chuy.png" class="character glow">
+            <img src="bob.png" class="character glow">
         </div>
 
         <div class="buttons">
@@ -27,3 +39,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
